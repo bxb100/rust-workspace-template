@@ -152,7 +152,9 @@ fn make_hawkeye_cmd(fix: bool) -> StdCommand {
 
 fn make_typos_cmd() -> StdCommand {
     ensure_installed("typos", "typos-cli");
-    find_command("typos")
+    let mut cmd = find_command("typos");
+    cmd.args(["--config", env!("TYPOS_CONFIG_PATH")]);
+    cmd
 }
 
 fn make_taplo_cmd(fix: bool) -> StdCommand {
