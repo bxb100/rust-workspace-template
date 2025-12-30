@@ -21,7 +21,7 @@ resolver = "3"
 
 [workspace.package]
 edition = "2024"
-license = ""
+license = "Apache-2.0-ASF AND "
 homepage = ""
 repository = ""
 readme = "README.md"

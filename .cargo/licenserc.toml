@@ -18,3 +18,12 @@
 headerPath = "Apache-2.0-ASF.txt"
 
 includes = ['**/*.rs', '**/*.yml', '**/*.yaml', '**/*.toml']
+excludes = [
+  'xtask/**',
+  '.cargo/config.toml',
+  '.cargo/licenserc.toml',
+  '.cargo/taplo.toml',
+  '.cargo/typos.toml',
+  'rust-toolchain.toml',
+  'rustfmt.toml',
+]
