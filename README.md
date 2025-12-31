@@ -1,5 +1,8 @@
 this template derive from @tisonkun's[^1] workspace setup
 
+> [!NOTE]  
+> change your license settings (`.cargo/licenserc.toml`) first.
+
 ```shell
 cargo x lint --fix
 ```
@@ -31,8 +34,9 @@ tree:
 - `.cargo/licenserc.toml`: https://github.com/korandoru/hawkeye#configurations
 - `.cargo/taplo.toml`: https://taplo.tamasfe.dev/configuration/file.html
 - `.cargo/typos.toml`: https://github.com/crate-ci/typos/blob/master/docs/reference.md
+- `.cargo/clippy.toml`: https://doc.rust-lang.org/clippy/configuration.html
 - `Cargo.toml`
-  - https://doc.rust-lang.org/cargo/reference/manifest.html#the-lints-section
+    - https://doc.rust-lang.org/cargo/reference/manifest.html#the-lints-section
 - `rust-toolchain.toml`: https://rust-lang.github.io/rustup/overrides.html#the-toolchain-file
 - `rustfmt.toml`: https://github.com/rust-lang/rustfmt
 

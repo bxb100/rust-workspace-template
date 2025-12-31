@@ -93,6 +93,7 @@ fn ensure_installed(bin: &str, crate_name: &str) {
     }
 }
 
+#[allow(clippy::expect_used)]
 fn run_command(mut cmd: StdCommand) {
     println!("{cmd:?}");
     let status = cmd.status().expect("failed to execute process");

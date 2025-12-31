@@ -27,6 +27,7 @@ fn main() {
     hawkeye_config_path(&workspace_root_config);
     taplo_config_path(&workspace_root_config);
     typos_config_path(&workspace_root_config);
+    clippy_config_path(&workspace_root_config);
 }
 
 fn hawkeye_config_path(root: &Path) {
@@ -51,4 +52,10 @@ fn typos_config_path(root: &Path) {
         "cargo:rustc-env=TYPOS_CONFIG_PATH={}",
         config_path.display()
     )
+}
+
+/// <https://doc.rust-lang.org/clippy/configuration.html>
+fn clippy_config_path(root: &Path) {
+    let config_path = root.join("clippy.toml");
+    println!("cargo:rustc-env=CLIPPY_CONF_DIR={}", config_path.display())
 }

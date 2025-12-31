@@ -26,4 +26,7 @@ excludes = [
   '.cargo/typos.toml',
   'rust-toolchain.toml',
   'rustfmt.toml',
+  #  MIT
+  '.cargo/clippy.toml',
+  '.github/**',
 ]
