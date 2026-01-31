@@ -16,24 +16,26 @@
 # under the License.
 
 [workspace]
-members = ["xtask"]
+members = ["core", "xtask"]
 resolver = "3"
+default-members = ["core"]
 
 [workspace.package]
 edition = "2024"
-license = "Apache-2.0-ASF"
+license = ""
 homepage = ""
 repository = ""
 readme = "README.md"
 rust-version = "1.85.0"
 
+[workspace.dependencies]
+
+
 [workspace.lints.rust]
 unknown_lints = "deny"
+unsafe_code = "deny"
 unused_must_use = "deny"
 
 [workspace.lints.clippy]
 dbg_macro = "deny"
 too_many_arguments = "allow"
-unwrap_used = "warn"
-expect_used = "warn"
-undocumented_unsafe_blocks = "deny"

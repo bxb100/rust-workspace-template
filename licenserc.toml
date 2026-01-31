@@ -15,6 +15,12 @@
 # specific language governing permissions and limitations
 # under the License.
 
-[toolchain]
-channel = "stable"
-components = ["rustfmt", "clippy", "rust-analyzer"]
+headerPath = "Apache-2.0-ASF.txt"
+
+includes = ['**/*.rs', '**/*.yml', '**/*.yaml', '**/*.toml']
+excludes = [
+  'xtask/**',
+  '.cargo/config.toml',
+  'rust-toolchain.toml',
+  'rustfmt.toml',
+]
