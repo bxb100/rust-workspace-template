@@ -3,6 +3,8 @@ this template derive from @tisonkun's[^1] workspace setup
 > [!NOTE]  
 > if you using hawkeye, change your license settings (`./licenserc.toml`) first.
 
+## Lint
+
 ```shell
 cargo x lint --fix
 ```
@@ -13,7 +15,7 @@ or
 just fix
 ```
 
-tree:
+## Tree
 
 ```text
 .
