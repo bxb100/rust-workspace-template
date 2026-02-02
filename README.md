@@ -52,4 +52,9 @@ tree:
 - `rust-toolchain.toml`: https://rust-lang.github.io/rustup/overrides.html#the-toolchain-file
 - `rustfmt.toml`: https://github.com/rust-lang/rustfmt
 
+## Ref
+
+- [matklad/cargo-xtask](https://github.com/matklad/cargo-xtask)
+- [rust-analyzer](https://github.com/rust-lang/rust-analyzer)
+
 [^1]: https://github.com/apache/datasketches-rust/pull/43

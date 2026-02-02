@@ -12,3 +12,6 @@ new project_name:
 
 lint-fix:
     @cargo x lint --fix
+
+dist:
+    @cargo x dist --package template --strip true
