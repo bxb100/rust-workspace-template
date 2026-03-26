@@ -37,5 +37,8 @@ unsafe_code = "deny"
 unused_must_use = "deny"
 
 [workspace.lints.clippy]
-dbg_macro = "deny"
-too_many_arguments = "allow"
+nursery = "warn"
+pedantic = "warn"
+
+dbg_macro = { level = "deny", priority = 1 }
+too_many_arguments = { level = "allow", priority = 1 }

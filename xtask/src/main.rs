@@ -172,7 +172,7 @@ fn make_taplo_cmd(fix: bool) -> Result<StdCommand, DynError> {
 fn main() {
     let cmd = Command::parse();
     if let Err(e) = cmd.run() {
-        eprintln!("{}", e);
+        eprintln!("{e}");
         std::process::exit(-1);
     }
 }

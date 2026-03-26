@@ -1,6 +1,6 @@
 this template derive from @tisonkun's[^1] workspace setup
 
-> [!NOTE]  
+> [!NOTE]
 > if you using hawkeye, change your license settings (`./licenserc.toml`) first.
 
 ## Lint
@@ -9,7 +9,7 @@ this template derive from @tisonkun's[^1] workspace setup
 cargo x lint --fix
 ```
 
-or 
+or
 
 ```shell
 just fix

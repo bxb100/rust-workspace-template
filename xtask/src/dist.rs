@@ -10,7 +10,7 @@ use crate::find_command;
 use crate::project_root;
 
 #[derive(Parser)]
-pub(crate) struct CommandDist {
+pub struct CommandDist {
     #[arg(long, help = "Binary package name to dist")]
     package: String,
     #[arg(long, help = "Strip the binary to reduce size")]
@@ -30,7 +30,7 @@ impl CommandDist {
         self.dist_binary()
     }
 
-    /// Copy from https://github.com/matklad/cargo-xtask/blob/master/examples/hello-world/xtask/src/main.rs
+    /// Copy from <https://github.com/matklad/cargo-xtask/blob/master/examples/hello-world/xtask/src/main.rs>
     fn dist_binary(&self) -> Result<(), DynError> {
         let cargo = env::var("CARGO").unwrap_or_else(|_| "cargo".to_string());
         let status = Command::new(cargo)
@@ -56,7 +56,7 @@ impl CommandDist {
                     Err("strip failed")?;
                 }
             } else {
-                eprintln!("no `strip` utility found")
+                eprintln!("no `strip` utility found");
             }
         }
 
