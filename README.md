@@ -45,7 +45,7 @@ just fix
 ```
 
 - `.cargo/config.toml`: setting alias `x`
-- `licenserc.toml`: https://github.com/korandoru/hawkeye#configurations
+- `licenserc.toml`: https://github.com/fast/hawkeye#configuration
 - `taplo.toml`: https://taplo.tamasfe.dev/configuration/file.html
 - `typos.toml`: https://github.com/crate-ci/typos/blob/master/docs/reference.md
 - `clippy.toml`: https://doc.rust-lang.org/clippy/configuration.html
